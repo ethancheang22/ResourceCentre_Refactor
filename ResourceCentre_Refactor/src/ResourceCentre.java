@@ -1,9 +1,15 @@
 import java.util.ArrayList;
 
 public class ResourceCentre {
+<<<<<<< HEAD
 	
 	// Student 2 - Maegan
 	
+=======
+
+	//Student 1 - Ian
+
+>>>>>>> branch 'master' of https://github.com/ethancheang22/ResourceCentre_Refactor.git
 	private static final int OPTION_RETURN = 4;
 	private static final int OPTION_LOAN = 3;
 	private static final int OPTION_ADD = 2;
@@ -38,13 +44,13 @@ public class ResourceCentre {
 				
 				int itemType = Helper.readInt("Enter option to select item type > ");
 
-				if (itemType == 1) {
+				if (itemType == OPTION_VIEW) {
 					// Add a camcorder
 					Camcorder cc = inputCamcorder();
 					ResourceCentre.addCamcorder(camcorderList, cc);
 					System.out.println("Camcorder added");
 
-				} else if (itemType == 2) {
+				} else if (itemType == OPTION_ADD) {
 					// Add Chromebook
 					Chromebook cb = inputChromebook();
 					ResourceCentre.addChromebook(chromebookList, cb);
@@ -61,10 +67,10 @@ public class ResourceCentre {
 				
 				int itemType = Helper.readInt("Enter option to select item type > ");
 
-				if (itemType == 1) {
+				if (itemType == OPTION_VIEW) {
 					// Loan camcorder
 					ResourceCentre.loanCamcorder(camcorderList);
-				} else if (itemType == 2) {
+				} else if (itemType == OPTION_ADD) {
 					// Loan Chromebook
 					ResourceCentre.loanChromebook(chromebookList);
 				} else {
@@ -77,10 +83,10 @@ public class ResourceCentre {
 				itemTypeMenu();
 				
 				int itemType = Helper.readInt("Enter option to select item type > ");
-				if (itemType == 1) {
+				if (itemType == OPTION_VIEW) {
 					// Return camcorder
 					ResourceCentre.returnCamcorder(camcorderList);
-				} else if (itemType == 2) {
+				} else if (itemType == OPTION_ADD) {
 					// Return Chromebook
 					ResourceCentre.returnChromebook(chromebookList);
 				} else {
@@ -97,9 +103,12 @@ public class ResourceCentre {
 
 	}
 
+<<<<<<< HEAD
 	/**
 	 * 
 	 */
+=======
+>>>>>>> branch 'master' of https://github.com/ethancheang22/ResourceCentre_Refactor.git
 	public static void itemTypeMenu() {
 		ResourceCentre.setHeader("ITEM TYPES");
 		System.out.println("1. Camcorder");
@@ -140,7 +149,11 @@ public class ResourceCentre {
 
 		for (int i = 0; i < camcorderList.size(); i++) {
 
+<<<<<<< HEAD
 			output += String.format("%-84s\n", camcorderList.get(i).toString());
+=======
+			output += String.format("%-84s \n", camcorderList.get(i).toString());
+>>>>>>> branch 'master' of https://github.com/ethancheang22/ResourceCentre_Refactor.git
 		}
 		return output;
 	}
@@ -157,7 +170,11 @@ public class ResourceCentre {
 		// write your code here
 		for (int i = 0; i < chromebookList.size(); i++) {
 
+<<<<<<< HEAD
 			output += String.format("%-84s\n", chromebookList.get(i).toString());
+=======
+			output += String.format("%-84s \n", chromebookList.get(i).toString());
+>>>>>>> branch 'master' of https://github.com/ethancheang22/ResourceCentre_Refactor.git
 		}
 		return output;
 	}
