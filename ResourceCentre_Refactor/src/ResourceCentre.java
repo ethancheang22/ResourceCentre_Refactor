@@ -5,7 +5,7 @@ public class ResourceCentre {
 	// Student 1 - Ian
 	// Student 2 - Maegan
 	// Student 3 - Ethan
-	// Student 4 - Alvin]
+	// Student 4 - Alvin
 	
 	//TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST
 
