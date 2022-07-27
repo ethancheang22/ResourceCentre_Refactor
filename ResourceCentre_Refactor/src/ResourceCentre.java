@@ -182,6 +182,7 @@ public class ResourceCentre {
 
 		Camcorder cc= new Camcorder(tag, description, zoom);
 		return cc;
+		// Ethan C SCRUM MASTER SUII
 		
 	}
 	public static void addCamcorder(ArrayList<Camcorder> camcorderList, Camcorder cc) {
