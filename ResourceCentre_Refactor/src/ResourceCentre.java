@@ -5,8 +5,8 @@ public class ResourceCentre {
 
 	//Ethan
 	//Maegan
-	//Alvin
-	//Iang
+	//AlviN
+	//Ian
 	
 	private static final int OPTION_RETURN = 4;
 	private static final int OPTION_LOAN = 3;
