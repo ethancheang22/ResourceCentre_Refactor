@@ -5,6 +5,7 @@ public class ResourceCentre {
 	// Student 1 - Ian
 	// Student 2 - Maegan
 	// Student 3 - Ethan
+	// Student 4 - Alvin 
 	
 
 	private static final int OPTION_RETURN = 4;
@@ -30,6 +31,7 @@ public class ResourceCentre {
 			option = Helper.readInt("Enter an option > ");
 
 			if (option == OPTION_VIEW) {
+		
 				// View all items
 				ResourceCentre.viewAllCamcorder(camcorderList);
 				ResourceCentre.viewAllChromebook(chromebookList);
