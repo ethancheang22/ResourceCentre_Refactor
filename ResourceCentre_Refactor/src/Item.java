@@ -1,74 +1,55 @@
 public class Item {
-  private String assetTag;
-  private String description;
-  private String dueDate;
-  private boolean isAvailable;
+	private String assetTag;
+	private String description;
+	private String dueDate;
+	private boolean isAvailable;
 
-  public Item(String assetTag, String description) {
-    this.assetTag = assetTag;
-    this.description = description;
-    this.dueDate = "";
-    this.isAvailable = true;
-  }
-  public String toString() {
-    // Write your codes here
-    String itemInfo = String.format("%-10s %-30s %-10s %-10s",
-        assetTag,
-        description, 
-        showAvailability(isAvailable),
-        dueDate);
-    return itemInfo;
-  }
-  public String showAvailability(boolean isAvailable) {
-    String avail;
+	public Item(String assetTag, String description) {
+		this.assetTag = assetTag;
+		this.description = description;
+		this.dueDate = "";
+		this.isAvailable = true;
+	}
 
-    if (isAvailable == true) {
-      avail = "Yes";
-    } else {
-      avail = "No";
-    }
-    return avail;
-  }
-  public String getAssetTag() {
-    return assetTag;
-  }
+	public String toString() {
+		// Write your codes here
+		String itemInfo = String.format("%-10s %-30s %-10s %-10s", assetTag, description, showAvailability(isAvailable),
+				dueDate);
+		return itemInfo;
+	}
 
-  public String getDescription() {
-    return description;
-  }
+	public String showAvailability(boolean isAvailable) {
+		String avail;
 
-  public String getDueDate() {
-    return dueDate;
-  }
+		if (isAvailable == true) {
+			avail = "Yes";
+		} else {
+			avail = "No";
+		}
+		return avail;
+	}
 
-  public void setDueDate(String dueDate) {
-    this.dueDate = dueDate;
-  }
+	public String getAssetTag() {
+		return assetTag;
+	}
 
-  public boolean getIsAvailable() {
-    return isAvailable;
-  }
+	public String getDescription() {
+		return description;
+	}
 
-  public void setIsAvailable(boolean isAvailable) {
-    this.isAvailable = isAvailable;
-  }
-}
-public class Chromebook extends Item{
-  private String os;
+	public String getDueDate() {
+		return dueDate;
+	}
 
-  public Chromebook(String assetTag, String description, String os) {
-    super(assetTag, description);
-    this.os = os;
-  }
+	public void setDueDate(String dueDate) {
+		this.dueDate = dueDate;
+	}
 
-  public String getOs() {
-    return os;
-  }
-  
-  public String toString(){
-    // Write your codes here
-    String output = super.toString();
-    output = String.format("%-63s %-20s", output, os);
-    return output;
-  }
+	public boolean getIsAvailable() {
+		return isAvailable;
+	}
+
+	public void setIsAvailable(boolean isAvailable) {
+		this.isAvailable = isAvailable;
+	}
 }

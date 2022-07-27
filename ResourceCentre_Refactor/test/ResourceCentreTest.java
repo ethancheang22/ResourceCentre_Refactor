@@ -6,6 +6,8 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
+//MODIFIED
+
 public class ResourceCentreTest {
 	private Camcorder cc1;
 	private Camcorder cc2;
@@ -90,7 +92,8 @@ public class ResourceCentreTest {
 		
 	}
 	@Test
-	public void testRetrieveAllChrombook() {
+
+	public void testRetrieveAllChromebook() {
 		//fail("Not yet implemented");
 		// Test if Item list is not null but empty - boundary
 		assertNotNull("Test if there is valid Chromebook arraylist to retrieve item from", chromebookList);
@@ -111,6 +114,7 @@ public class ResourceCentreTest {
 		testOutput += String.format("%-10s %-30s %-10s %-10s %-20s\n","CB0012", "SAMSUNG Chromebook 4+", "Yes", "","Win 10");	
 		assertEquals("Test that ViewAllChromebooklist", testOutput, allChrombook);
 	}
+
 
 	@Test
 	public void testDoLoanCamcorder() {
