@@ -3,7 +3,6 @@ import java.util.ArrayList;
 public class ResourceCentre {
 <<<<<<< HEAD
 
-	//Student 1 - Ian 
 
 =======
 
