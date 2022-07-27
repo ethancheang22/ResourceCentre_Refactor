@@ -1,9 +1,19 @@
 import java.util.ArrayList;
 
 public class ResourceCentre {
+<<<<<<< HEAD
 
 	//Student 1 - Ian 
 
+=======
+
+	// Student 1 - Ian
+	// Student 2 - Maegan
+	// Student 3 - Ethan
+	// Student 4 - Alvin smelly
+	
+
+>>>>>>> branch 'master' of https://github.com/ethancheang22/ResourceCentre_Refactor.git
 	private static final int OPTION_RETURN = 4;
 	private static final int OPTION_LOAN = 3;
 	private static final int OPTION_ADD = 2;
@@ -27,6 +37,7 @@ public class ResourceCentre {
 			option = Helper.readInt("Enter an option > ");
 
 			if (option == OPTION_VIEW) {
+		
 				// View all items
 				ResourceCentre.viewAllCamcorder(camcorderList);
 				ResourceCentre.viewAllChromebook(chromebookList);
@@ -97,6 +108,7 @@ public class ResourceCentre {
 
 	}
 
+
 	public static void itemTypeMenu() {
 		ResourceCentre.setHeader("ITEM TYPES");
 		System.out.println("1. Camcorder");
@@ -136,7 +148,7 @@ public class ResourceCentre {
 		String output = "";
 
 		for (int i = 0; i < camcorderList.size(); i++) {
-
+			
 			output += String.format("%-84s \n", camcorderList.get(i).toString());
 		}
 		return output;
@@ -154,7 +166,9 @@ public class ResourceCentre {
 		// write your code here
 		for (int i = 0; i < chromebookList.size(); i++) {
 
-			output += String.format("%-84s \n", chromebookList.get(i).toString());
+
+			output += String.format("%-84s\n", chromebookList.get(i).toString());
+
 		}
 		return output;
 	}
@@ -272,7 +286,8 @@ public class ResourceCentre {
 		boolean isReturned = false;
 
 		for (int i = 0; i < camcorderList.size(); i++) {
-			if (tag.equalsIgnoreCase(camcorderList.get(i).getAssetTag())
+			String assetTag = camcorderList.get(i).getAssetTag();
+			if (tag.equalsIgnoreCase(assetTag)
 					&& camcorderList.get(i).getIsAvailable() == false) {
 				camcorderList.get(i).setIsAvailable(true);
 				camcorderList.get(i).setDueDate("");
@@ -300,7 +315,8 @@ public class ResourceCentre {
 		boolean isReturned = false;
 
 		for (int i = 0; i < chromebookList.size(); i++) {
-			if (tag.equalsIgnoreCase(chromebookList.get(i).getAssetTag())
+			String assetTag = chromebookList.get(i).getAssetTag();
+			if (tag.equalsIgnoreCase(assetTag)
 					&& chromebookList.get(i).getIsAvailable() == false) {
 				chromebookList.get(i).setIsAvailable(true);
 				chromebookList.get(i).setDueDate("");
