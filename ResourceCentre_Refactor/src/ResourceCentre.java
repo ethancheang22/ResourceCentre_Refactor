@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
 public class ResourceCentre {
-
+	
 	// Student 1 - Ian
 	// Student 2 - Maegan
 	// Student 3 - Ethan
@@ -139,7 +139,7 @@ public class ResourceCentre {
 	//================================= Option 1 View (CRUD - Read) =================================
 	public static String retrieveAllCamcorder(ArrayList<Camcorder> camcorderList) {
 		String output = "";
-
+//Alvin Tan
 		for (int i = 0; i < camcorderList.size(); i++) {
 			
 			output += String.format("%-84s \n", camcorderList.get(i).toString());
