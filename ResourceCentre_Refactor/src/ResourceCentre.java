@@ -7,7 +7,7 @@ public class ResourceCentre {
 	// Student 3 - Ethan
 	// Student 4 - Alvin
 	
-	//TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST
+	//TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST
 
 	private static final int OPTION_RETURN = 4;
 	private static final int OPTION_LOAN = 3;
