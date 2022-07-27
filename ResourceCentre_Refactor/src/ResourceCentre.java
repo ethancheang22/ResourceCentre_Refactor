@@ -208,7 +208,7 @@ public class ResourceCentre {
 	
 	//================================= Option 3 Loan (CURD- Update) =================================
 	public static boolean doLoanCamcorder(ArrayList<Camcorder> camcorderList, String tag, String dueDate) {
-		
+//Ian
 		boolean isLoaned = false;
 
 		for (int i = 0; i < camcorderList.size(); i++) {
